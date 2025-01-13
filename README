@@ -1,0 +1,128 @@
+# Git Guide
+
+## Getting Started with Git
+
+### 1. Adding Files
+Use the `git add` command to add files to the staging area.
+
+```bash
+# Add a specific file
+git add filename
+
+# Add all files
+git add .
+2. Pushing Changes
+Use the git push command to push your changes to the remote repository.
+bash
+# Push to the default remote and branch
+git push
+
+# Push to a specific remote and branch
+git push origin branch_name
+
+# Useful flags
+# -u: sets upstream for the branch
+git push -u origin branch_name
+3. Pulling Changes
+Use the git pull command to fetch and merge changes from the remote repository.
+bash
+# Pull from the default remote and branch
+git pull
+
+# Pull from a specific remote and branch
+git pull origin branch_name
+
+# Useful flags
+# --rebase: rebase your current branch on top of the fetched branch
+git pull --rebase origin branch_name
+4. Changing the Origin URL
+Use the git remote command to change the remote repository URL.
+bash
+# Change the origin URL
+git remote set-url origin new_url
+5. Using Stash
+Use the git stash command to stash your changes and save them for later.
+bash
+# Stash changes
+git stash
+
+# Apply the latest stash
+git stash apply
+
+# Apply a specific stash
+git stash apply stash@{1}
+
+# List stashes
+git stash list
+
+# Drop a specific stash
+git stash drop stash@{1}
+6. Reverting Changes
+Use the git revert command to create a new commit that undoes the changes of a previous commit.
+bash
+# Revert a specific commit
+git revert commit_hash
+
+# Revert multiple commits
+git revert commit_hash1 commit_hash2
+7. Resetting Changes
+Use the git reset command to reset your current branch to a specific commit.
+bash
+# Soft reset (keeps changes in the working directory)
+git reset --soft commit_hash
+
+# Mixed reset (default, keeps changes in the staging area)
+git reset commit_hash
+
+# Hard reset (discards all changes)
+git reset --hard commit_hash
+8. Viewing Logs
+Use the git log command to view the commit history.
+bash
+# View the commit history
+git log
+
+# Useful flags
+# --oneline: show each commit on one line
+git log --oneline
+
+# --graph: show a graphical representation of the commit history
+git log --graph
+
+# --since and --until: show commits between specific dates
+git log --since="2023-01-01" --until="2023-12-31"
+9. Viewing Differences
+Use the git diff command to view the differences between commits, branches, or files.
+bash
+# View differences between the working directory and the staging area
+git diff
+
+# View differences between the working directory and a specific commit
+git diff commit_hash
+
+# View differences between two branches
+git diff branch1 branch2
+
+# Useful flags
+# --name-only: show only the names of changed files
+git diff --name-only
+
+# --stat: show statistics about the changes
+git diff --stat
+10. Showing Information
+Use the git show command to show various types of information.
+bash
+# Show information about a specific commit
+git show commit_hash
+
+# Show changes introduced by the most recent commit
+git show
+
+# Useful flags
+# --pretty: format the output
+git show --pretty=oneline
+
+# --name-status: show names and statuses of changed files
+git show --name-status
+
+
