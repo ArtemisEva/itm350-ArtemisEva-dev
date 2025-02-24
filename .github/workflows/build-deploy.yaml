@@ -9,8 +9,6 @@ env:
   REPO_NAME: eva96002/itm350-artemiseva-bb
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - run: |
