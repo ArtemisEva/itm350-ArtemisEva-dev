@@ -9,7 +9,6 @@ env:
   REPO_NAME: eva96002/itm350-artemiseva-bb
 
 jobs:
-    runs-on: ubuntu-latest
     steps:
       - run: |
           echo The PR was merged
