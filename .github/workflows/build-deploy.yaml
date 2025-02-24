@@ -10,7 +10,10 @@ env:
 
 jobs:
   if_merged:
+<<<<<<< HEAD
     if: github.event.pull_request.merged == true
+=======
+>>>>>>> 0229bed9f16732d38aedca1b2e8f4fbca3125ebf
     runs-on: ubuntu-latest    
     steps:
       - run: |
