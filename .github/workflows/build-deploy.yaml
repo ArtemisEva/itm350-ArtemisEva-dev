@@ -2,9 +2,9 @@ on:
   workflow_dispatch:
   pull_request:
     branches: 
-      - init
+      - build-automation
     types:
-      - closed
+      [closed]
 env:
   REPO_NAME: eva96002/itm350-artemiseva-bb
 
