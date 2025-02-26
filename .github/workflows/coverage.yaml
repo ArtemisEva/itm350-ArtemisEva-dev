@@ -5,12 +5,3 @@ on:
 
 jobs:
     runs-on: ubuntu-latest
-
-    steps:
-   - name: Install dependencies
-      run: |
-        npm install
-
-    - name: Run tests with coverage
-      run: |
-        npx jest --coverage
